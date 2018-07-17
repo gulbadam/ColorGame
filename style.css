@@ -15,9 +15,15 @@ body {
 }
 h1 {
     text-align: center;
-    color: blue;
+    color: white;
+    height: 7rem;
 }
 #message {
     text-align: center;
     color:white;
+}
+#stripe {
+    background: blueviolet;
+    height: 2rem;
+    text-align: center;
 }
