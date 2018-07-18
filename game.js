@@ -14,6 +14,7 @@ easyButton.addEventListener("click", function(){
     hardButton.classList.remove("selected");
     superButton.classList.remove("selected");
     easyButton.classList.add("selected");
+    h1.style.backgroundColor = "steelblue";
     numberOfSquares= 3;
     colors=generateRandomColors(numberOfSquares);
     pickedColor = pickColor();
@@ -32,6 +33,7 @@ hardButton.addEventListener("click", function () {
    easyButton.classList.remove("selected");
    superButton.classList.remove("selected");
    hardButton.classList.add("selected");
+   h1.style.backgroundColor = "steelblue";
    numberOfSquares= 6;
    colors = generateRandomColors(numberOfSquares);
    pickedColor = pickColor();
@@ -49,6 +51,7 @@ superButton.addEventListener("click", function () {
     easyButton.classList.remove("selected");
     hardButton.classList.remove("selected");
     superButton.classList.add("selected");
+   h1.style.backgroundColor = "steelblue";
     numberOfSquares = 9;
     colors = generateRandomColors(numberOfSquares);
     pickedColor = pickColor();
@@ -82,7 +85,7 @@ resetButton.addEventListener("click", function() {
     for (var i = 0; i < colors.length; i++) {
         squares[i].style.backgroundColor = colors[i];
        }
-    h1.style.backgroundColor = "#232323";
+    h1.style.backgroundColor = "steelblue";
     
 });
 function changeColors(color) {
