@@ -80,8 +80,9 @@ for (var i = 0; i < colors.length; i++) {
 resetButton.addEventListener("click", function() {
     colors = generateRandomColors(numberOfSquares);
     pickedColor = pickColor();
-    console.log(numberOfSquares);
+   messageDisplay.textContent="";
     colorDisplay.textContent = pickedColor;
+    this.textContent ="New Colors";
     for (var i = 0; i < colors.length; i++) {
         squares[i].style.backgroundColor = colors[i];
        }
